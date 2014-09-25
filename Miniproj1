@@ -70,6 +70,8 @@ def rpsls(player_choice):
     # use if/elif/else to determine winner, print winner message
     if (diff > 0 and diff <3):
         print "Computer wins!"
+    elif (diff == 0):
+        print "Player and computer tie!"
     else:
         print "Player wins!"
     
