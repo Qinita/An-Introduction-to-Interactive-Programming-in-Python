@@ -34,7 +34,7 @@ import math
     
 def area_of_polygon(side,length):
   
-    area = 0.25*(length**2)/(math.atan((math.pi)/side))
+    area = 0.25*side*(length**2)/(math.atan((math.pi)/side))
     return area
 print area_of_polygon(7,3)
 
