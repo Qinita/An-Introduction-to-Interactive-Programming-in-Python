@@ -1,0 +1,53 @@
+#Q5
+
+def a(x):
+    f = -5*(x**5)+ 69*(x**2) - 47
+    return f
+   
+    
+a0=a(0)
+print a0
+
+a1=a(1)
+print a1
+
+a2=a(2)
+print a2
+
+a3=a(3)
+print a3
+
+#Q6
+
+def future_value(present_value, annual_rate, periods_per_year, years):
+    rate_per_period = annual_rate / periods_per_year
+    periods = periods_per_year * years
+    
+    future_value = present_value * ((1 + rate_per_period)**periods)
+    return future_value
+
+print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)
+
+#Q7
+
+import math
+    
+def area_of_polygon(side,length):
+  
+    area = 0.25*(length**2)/(math.atan((math.pi)/side))
+    return area
+print area_of_polygon(7,3)
+
+#Q9
+
+import math
+
+def project_to_distance(point_x,point_y,distance):
+     dist_to_origin = math.sqrt(point_x ** 2 + point_y ** 2)    
+     scale = distance / dist_to_origin
+     return point_x * scale, point_y * scale
+     
+
+
+
+print project_to_distance(2, 7, 4)
