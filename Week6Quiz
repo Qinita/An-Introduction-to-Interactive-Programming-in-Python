@@ -1,5 +1,6 @@
 #Quiz 6a
 #Question 7
+# http://www.codeskulptor.org/#user38_0weYFhKPmA_0.py
 class BankAccount:
     def __init__(self, initial_balance):
         """Creates an account with the given balance."""
